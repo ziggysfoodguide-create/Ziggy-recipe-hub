@@ -1,0 +1,20 @@
+{
+  "name": "ziggy-recipe-hub",
+  "version": "1.0.0",
+  "description": "Ziggy's Food Guide - Crazy Recipes",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "recipes",
+    "food",
+    "cooking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {}
+}
