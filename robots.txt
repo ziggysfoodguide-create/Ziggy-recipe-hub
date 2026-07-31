@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ziggysfoodguide-crazy-recipes.vercel.app/sitemap.xml
