@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collab · Ziggy's Food Guide</title>
+<meta name="description" content="Clássicos mediterrâneos com um twist crazy. Criação de conteúdo gastronómico para marcas: Reels dedicados, fotografia de produto, UGC e mais.">
+<link rel="canonical" href="https://ziggysfoodguide.com/collab.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="theme-color" content="#E3151A">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ziggysfoodguide.com/collab.html">
+<meta property="og:title" content="Collab · Ziggy's Food Guide">
+<meta property="og:description" content="Clássicos mediterrâneos com um twist crazy. Criação de conteúdo gastronómico para marcas.">
+<meta property="og:image" content="https://ziggysfoodguide.com/logo.svg">
+<meta property="og:site_name" content="Ziggy's Food Guide">
+<meta property="og:locale" content="pt_PT">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red: #E3151A;
+  --red-dark: #B5101A;
+  --paper: #FBF4E9;
+  --ink: #2A211C;
+  --ink-dim: #6b5e55;
+  --line: #e8dfd1;
+  --cream-dark: #F2E8D5;
+  --green: #1a7a3a;
+}
+*{ box-sizing: border-box; }
+html, body{ margin:0; padding:0; }
+body{
+  background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.92rem; line-height: 1.7;
+}
+a{ color: var(--red); }
+
+/* Top nav */
+.topnav{
+  max-width: 1100px; margin: 0 auto; padding: 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.topnav .logo{ font-family: 'Playfair Display', serif; font-weight: 900; color: var(--red); font-size: 2rem; text-decoration: none; }
+.topnav .back-link{ font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--ink-dim); text-decoration: none; }
+.topnav .back-link:hover{ color: var(--red); }
+.lang-switch{ font-size: 0.8rem; }
+.lang-switch a{ margin: 0 6px; color: var(--ink-dim); text-decoration: none; }
+.lang-switch a.active{ color: var(--red); font-weight: 700; }
+
+/* Hero */
+.hero{
+  max-width: 980px; margin: 20px auto 40px; padding: 40px 24px 50px;
+  text-align: center; border-bottom: 1px solid var(--line);
+}
+.hero .eyebrow{
+  display: inline-block; font-family: 'Special Elite', monospace;
+  background: var(--red); color: #fff; padding: 5px 16px; border-radius: 4px;
+  font-size: 0.78rem; letter-spacing: 0.1em; margin-bottom: 20px;
+}
+.hero h1{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: clamp(2.1rem, 5.5vw, 3.6rem); line-height: 1.05;
+  margin: 0 0 20px; color: var(--ink);
+}
+.hero h1 em{ font-style: italic; color: var(--red); }
+.hero .tagline{
+  display: inline-block; font-family: 'Special Elite', monospace;
+  font-size: 0.86rem; letter-spacing: 0.04em;
+  padding: 10px 18px; border-left: 3px solid var(--red);
+  background: var(--cream-dark); margin: 10px 0 18px;
+  color: var(--ink); text-align: left;
+}
+.hero .lead{
+  max-width: 680px; margin: 0 auto;
+  font-size: 1rem; line-height: 1.7; color: var(--ink-dim);
+}
+
+/* Stats */
+.stats{
+  max-width: 1040px; margin: 0 auto 60px; padding: 24px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.stat{
+  text-align: center; padding: 20px 10px;
+  border-radius: 12px; background: var(--cream-dark);
+}
+.stat .num{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: clamp(1.7rem, 4vw, 2.4rem); color: var(--red); line-height: 1;
+  display: block;
+}
+.stat .label{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem;
+  color: var(--ink); margin-top: 8px;
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;
+}
+.stat .period{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.62rem;
+  color: var(--ink-dim); margin-top: 4px; letter-spacing: 0.04em;
+}
+@media (max-width: 680px){
+  .stats{ grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+/* Section */
+.section{
+  max-width: 980px; margin: 0 auto 60px; padding: 0 24px;
+}
+.section h2{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: clamp(1.8rem, 4vw, 2.3rem); color: var(--red);
+  margin: 0 0 8px; text-align: center;
+}
+.section h2 .asterisk{ color: var(--red); display: inline-block; transform: translateY(-4px); }
+.section .section-sub{
+  text-align: center; color: var(--ink-dim); font-size: 0.9rem;
+  margin: 0 auto 32px; max-width: 640px; line-height: 1.6;
+}
+
+/* Growth banner */
+.growth{
+  background: var(--ink); color: var(--paper);
+  border-radius: 14px; padding: 32px 28px;
+  max-width: 980px; margin: 0 auto 60px;
+}
+.growth-head{ text-align: center; margin-bottom: 24px; }
+.growth-head h3{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.5rem; margin: 0 0 6px; color: var(--paper);
+}
+.growth-head .sub{ font-size: 0.82rem; color: #d9c9b5; }
+.growth-grid{
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+}
+.growth-cell{ text-align: center; }
+.growth-cell .mult{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.8rem; color: var(--red); line-height: 1;
+}
+.growth-cell .what{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem;
+  color: var(--paper); margin-top: 6px; line-height: 1.3;
+}
+@media (max-width: 680px){
+  .growth-grid{ grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+
+/* Audience */
+.audience{
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  max-width: 980px; margin: 0 auto;
+}
+.aud-card{
+  background: var(--paper); border: 2px solid var(--red); border-radius: 14px;
+  padding: 26px 22px; text-align: center;
+}
+.aud-card .aud-big{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 2.6rem; color: var(--red); line-height: 1; margin-bottom: 8px;
+}
+.aud-card .aud-label{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem;
+  color: var(--ink); line-height: 1.5;
+}
+.aud-card .aud-label strong{ color: var(--red); }
+@media (max-width: 680px){
+  .audience{ grid-template-columns: 1fr; }
+}
+
+/* Virais */
+.virals{
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  max-width: 980px; margin: 0 auto 40px;
+}
+.viral{
+  background: var(--cream-dark); border-radius: 10px;
+  padding: 16px 14px; text-align: left;
+  border-left: 4px solid var(--red);
+}
+.viral .views{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.5rem; color: var(--red); line-height: 1;
+  display: inline-block; margin-bottom: 4px;
+}
+.viral .name{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  font-weight: 700; color: var(--ink); text-transform: uppercase;
+  letter-spacing: 0.04em; margin-top: 6px; line-height: 1.3;
+}
+.virals-total{
+  text-align: center; max-width: 980px; margin: 0 auto;
+  padding: 18px 20px; background: var(--red); color: #fff;
+  border-radius: 12px;
+}
+.virals-total .big{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 2rem; color: #fff; display: inline-block; margin-right: 8px;
+}
+.virals-total .what{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.86rem;
+  color: #fff;
+}
+@media (max-width: 680px){
+  .virals{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px){
+  .virals{ grid-template-columns: 1fr; }
+}
+
+/* Partnership models grid */
+.models{
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  max-width: 980px; margin: 0 auto 24px;
+}
+.models.three{ grid-template-columns: repeat(3, 1fr); }
+.model{
+  background: var(--cream-dark); border: 1px solid var(--line); border-radius: 12px;
+  padding: 24px 20px; position: relative;
+}
+.model.recommended{
+  background: var(--red); color: #fff;
+  border-color: var(--red);
+  box-shadow: 0 8px 20px rgba(227, 21, 26, 0.18);
+}
+.model.recommended h4{ color: #fff; }
+.model.recommended p{ color: #fff; }
+.model.recommended p strong, .model.recommended p em{ color: #fff; }
+.model.recommended .model-tag{ background: #fff; color: var(--red); }
+.model-tag{
+  display: inline-block; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem; font-weight: 700; color: #fff; background: var(--red);
+  padding: 3px 10px; border-radius: 4px; letter-spacing: 0.08em;
+  text-transform: uppercase; margin-bottom: 12px;
+}
+.model h4{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.15rem; color: var(--ink); margin: 0 0 10px;
+}
+.model p{
+  font-size: 0.86rem; color: var(--ink); margin: 0; line-height: 1.6;
+}
+.model p strong{ color: var(--red); }
+.model-extras{
+  max-width: 980px; margin: 0 auto 24px;
+}
+.model-extras.two{
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+@media (max-width: 680px){
+  .model-extras.two{ grid-template-columns: 1fr; }
+}
+.extra{
+  background: var(--paper); border: 2px dashed var(--red); border-radius: 12px;
+  padding: 22px 22px;
+}
+.extra-tag{
+  display: inline-block; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem; font-weight: 700; color: var(--red);
+  padding: 2px 10px; border: 1px solid var(--red); border-radius: 4px;
+  letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px;
+}
+.extra h4{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.1rem; color: var(--ink); margin: 0 0 8px;
+}
+.extra p{
+  font-size: 0.86rem; color: var(--ink); margin: 0; line-height: 1.6;
+}
+.open-note{
+  text-align: center; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem; color: var(--ink-dim); margin-top: 20px; font-style: italic;
+}
+@media (max-width: 820px){
+  .models.three{ grid-template-columns: 1fr; }
+}
+@media (max-width: 680px){
+  .models{ grid-template-columns: 1fr; }
+}
+
+.frequency{
+  background: var(--paper); border: 2px dashed var(--red); border-radius: 12px;
+  padding: 20px 24px; max-width: 980px; margin: 0 auto;
+  text-align: center;
+}
+.frequency strong{ color: var(--red); }
+.frequency .val{
+  display: block; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem; color: var(--ink-dim); margin-top: 10px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+
+/* Brands */
+.brand-section{
+  display: grid; grid-template-columns: 1fr 2fr; gap: 24px;
+  max-width: 980px; margin: 0 auto;
+}
+@media (max-width: 680px){
+  .brand-section{ grid-template-columns: 1fr; }
+}
+.brand-col{
+  background: var(--cream-dark); border-radius: 12px; padding: 24px;
+}
+.brand-col h4{
+  font-family: 'IBM Plex Mono', monospace; font-weight: 700;
+  font-size: 0.78rem; color: var(--red); margin: 0 0 14px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  padding-bottom: 10px; border-bottom: 1px solid var(--red);
+}
+.brand-list{ display: flex; flex-wrap: wrap; gap: 10px; }
+.brand-badge{
+  padding: 8px 18px; border: 2px solid var(--red);
+  border-radius: 30px; background: var(--paper);
+  font-family: 'Playfair Display', serif; font-weight: 700;
+  color: var(--ink); font-size: 0.95rem;
+}
+.brand-badge.featured{
+  background: var(--red); color: #fff; border-color: var(--red);
+}
+
+/* Form */
+.contact-box{
+  max-width: 680px; margin: 0 auto; background: var(--cream-dark);
+  border: 2px solid var(--red); border-radius: 14px;
+  padding: 36px 32px;
+}
+.contact-box h3{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.6rem; color: var(--red); margin: 0 0 8px; text-align: center;
+}
+.contact-box .contact-sub{
+  text-align: center; color: var(--ink-dim); font-size: 0.88rem;
+  margin: 0 0 24px;
+}
+.contact-box label{
+  display: block; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem; color: var(--ink); margin: 16px 0 6px; font-weight: 700;
+}
+.contact-box input, .contact-box textarea{
+  width: 100%; padding: 12px 14px; border: 1px solid var(--line);
+  border-radius: 8px; background: #fff; color: var(--ink);
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.88rem;
+  outline: none; transition: border-color 0.2s;
+}
+.contact-box input:focus, .contact-box textarea:focus{ border-color: var(--red); }
+.contact-box textarea{ min-height: 110px; resize: vertical; font-family: inherit; }
+.contact-box button{
+  width: 100%; margin-top: 22px;
+  background: var(--red); color: #fff; border: none; border-radius: 8px;
+  padding: 14px 20px; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem; font-weight: 700; letter-spacing: 0.04em;
+  cursor: pointer; transition: opacity 0.2s, transform 0.15s;
+}
+.contact-box button:hover{ opacity: 0.9; transform: translateY(-1px); }
+.contact-box button:disabled{ opacity: 0.5; cursor: wait; transform: none; }
+.contact-msg{
+  margin-top: 16px; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.86rem; min-height: 1.2em; text-align: center;
+}
+.contact-msg.success{ color: var(--green); }
+.contact-msg.error{ color: var(--red); }
+.direct-email{
+  text-align: center; margin-top: 24px;
+  font-size: 0.86rem; color: var(--ink-dim);
+}
+.direct-email a{ font-weight: 700; }
+
+.pricing-note{
+  text-align: center; font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem; color: var(--ink-dim); letter-spacing: 0.06em;
+  text-transform: uppercase; margin-top: 20px;
+}
+
+/* Footer */
+.page-footer{
+  max-width: 980px; margin: 60px auto 20px; padding: 24px;
+  text-align: center; border-top: 1px solid var(--line);
+  color: var(--ink-dim); font-size: 0.74rem; line-height: 1.6;
+}
+.page-footer a{ color: var(--ink-dim); text-decoration: none; margin: 0 8px; }
+.page-footer a:hover{ color: var(--red); }
+
+.lang-block{ display: none; }
+.lang-block.active{ display: block; }
+
+iframe.sink{ display: none; }
+
+/* Countries / audience sub-stats */
+.countries{
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+  max-width: 820px; margin: 24px auto 0;
+}
+.country{
+  text-align: center; padding: 10px 6px;
+  background: var(--paper); border-radius: 8px;
+}
+.country .flag{ font-size: 1.2rem; }
+.country .name{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.74rem;
+  color: var(--ink); margin-top: 4px; font-weight: 600;
+}
+.country .pct{
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+  color: var(--red); font-weight: 700;
+}
+@media (max-width: 480px){
+  .countries{ grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="/" class="logo">Z</a>
+  <div class="lang-switch">
+    <a href="#" data-lang="pt" class="active">PT</a> ·
+    <a href="#" data-lang="en">EN</a> ·
+    <a href="#" data-lang="es">ES</a>
+  </div>
+  <a href="/" class="back-link" id="backLink">← Voltar ao site</a>
+</nav>
+
+<!-- ============ PT ============ -->
+<div class="lang-block active" id="lang-pt">
+
+<header class="hero">
+  <span class="eyebrow">COLLAB</span>
+  <h1>Vamos criar <em>algo crazy</em> juntos.</h1>
+  <div class="tagline">CLÁSSICOS MEDITERRÂNEOS COM UM TWIST CRAZY</div>
+  <p class="lead">Criação de conteúdo gastronómico com identidade forte. Cada collab é pensada como uma receita: o produto da marca é o ingrediente principal, a história é o que fica. Execução, filmagem, fotografia, edição e publicação — tudo com o twist crazy.</p>
+</header>
+
+<section class="section">
+  <h2>Três formatos de parceria</h2>
+  <p class="section-sub">Escolhe o que faz mais sentido para a tua marca. Todos incluem conceito, receita, fotografia, gravação, edição e identificação da marca nas legendas.</p>
+  <div class="models three">
+    <div class="model">
+      <div class="model-tag">Opção A</div>
+      <h4>Collab</h4>
+      <p><strong>Reel + 2 stories</strong> publicados em simultâneo na conta da marca e na @ziggysfoodguide. As duas audiências somadas em cada post. <em>O formato mais acessível.</em></p>
+    </div>
+    <div class="model recommended">
+      <div class="model-tag">Opção B · Recomendada</div>
+      <h4>Parceria Remunerada</h4>
+      <p><strong>Reel + 2 stories</strong> publicados no meu perfil e entregues à marca para publicar no seu perfil. Duas publicações, cada uma com o seu próprio alcance. Métricas claras e separadas.</p>
+    </div>
+    <div class="model">
+      <div class="model-tag">Opção C</div>
+      <h4>Vídeo UGC</h4>
+      <p><strong>Reel</strong> produzido para os canais da marca: redes sociais, site e anúncios. Publicado apenas pela marca, sem publicação no meu perfil. Inclui <strong>direitos de utilização em anúncios pagos</strong>.</p>
+    </div>
+  </div>  <div class="frequency">
+    <strong>One-shot</strong> ou <strong>parceria contínua</strong>, com a periodicidade que fizer sentido para a marca.
+    <span class="val">Mensal · Trimestral · Semestral · Anual · Outra</span>
+  </div>
+  <p class="open-note">Aberto a outras ideias — se tens uma dinâmica diferente em mente, falamos.</p>
+</section>
+
+<section class="section">
+  <div class="contact-box">
+    <h3>Vamos conversar</h3>
+    <p class="contact-sub">Diz-me um pouco sobre a tua marca e o que procuras. Responderei o mais rápido possível com o media kit completo e proposta.</p>
+    <form id="collabForm" novalidate>
+      <label for="cf-name">Nome</label>
+      <input type="text" id="cf-name" required maxlength="100" placeholder="O teu nome">
+
+      <label for="cf-brand">Marca</label>
+      <input type="text" id="cf-brand" required maxlength="100" placeholder="Nome da marca">
+
+      <label for="cf-email">Email</label>
+      <input type="email" id="cf-email" required maxlength="120" placeholder="contacto@marca.com">
+
+      <label for="cf-website">Website / Instagram (opcional)</label>
+      <input type="text" id="cf-website" maxlength="150" placeholder="https://… ou @instagram">
+
+      <label for="cf-message">Mensagem</label>
+      <textarea id="cf-message" required maxlength="2000" placeholder="Fala-me do produto, do que procuras, modelos de parceria que te interessam e prazos, se já houver ideia."></textarea>
+
+      <button type="submit" id="cf-submit">Enviar proposta</button>
+      <div class="contact-msg" id="cf-msg" aria-live="polite"></div>
+    </form>
+    <p class="direct-email">ou diretamente: <a href="mailto:ziggysfoodguide@gmail.com">ziggysfoodguide@gmail.com</a></p>
+    <p class="pricing-note">Valores, pacotes e condições sob consulta</p>
+  </div>
+</section>
+
+</div>
+
+<!-- ============ EN ============ -->
+<div class="lang-block" id="lang-en">
+
+<header class="hero">
+  <span class="eyebrow">COLLAB</span>
+  <h1>Let's make <em>something crazy</em> together.</h1>
+  <div class="tagline">MEDITERRANEAN CLASSICS WITH A CRAZY TWIST</div>
+  <p class="lead">Food content creation with a strong identity. Each collab is built like a recipe: your product is the main ingredient, the story is what stays. Execution, filming, photography, editing and publishing — all with the crazy twist.</p>
+</header>
+
+<section class="section">
+  <h2>Three partnership formats</h2>
+  <p class="section-sub">Pick what makes most sense for your brand. All include concept, recipe, photography, filming, editing and brand identification in captions.</p>
+  <div class="models three">
+    <div class="model">
+      <div class="model-tag">Option A</div>
+      <h4>Collab</h4>
+      <p><strong>Reel + 2 stories</strong> published simultaneously on your brand's account and on @ziggysfoodguide. Both audiences combined on each post. <em>The most accessible format.</em></p>
+    </div>
+    <div class="model recommended">
+      <div class="model-tag">Option B · Recommended</div>
+      <h4>Paid Partnership</h4>
+      <p><strong>Reel + 2 stories</strong> published on my profile and delivered to your brand to post on your own profile. Two separate posts, each with its own reach. Clear and separate metrics.</p>
+    </div>
+    <div class="model">
+      <div class="model-tag">Option C</div>
+      <h4>UGC Video</h4>
+      <p><strong>Reel</strong> produced for your brand's channels: social media, website and ads. Published only by the brand, no publication on my profile. Includes <strong>paid ads usage rights</strong>.</p>
+    </div>
+  </div>  <div class="frequency">
+    <strong>One-shot</strong> or <strong>continuous partnership</strong>, with the frequency that makes sense for the brand.
+    <span class="val">Monthly · Quarterly · Semi-annual · Annual · Other</span>
+  </div>
+  <p class="open-note">Open to other ideas — if you have a different dynamic in mind, let's talk.</p>
+</section>
+
+<section class="section">
+  <div class="contact-box">
+    <h3>Let's talk</h3>
+    <p class="contact-sub">Tell me a bit about your brand and what you're looking for. I'll reply as soon as possible with the full media kit and a proposal.</p>
+    <form id="collabFormEn" novalidate>
+      <label for="cf-name-en">Name</label>
+      <input type="text" id="cf-name-en" required maxlength="100" placeholder="Your name">
+
+      <label for="cf-brand-en">Brand</label>
+      <input type="text" id="cf-brand-en" required maxlength="100" placeholder="Brand name">
+      <label for="cf-email-en">Email</label>
+      <input type="email" id="cf-email-en" required maxlength="120" placeholder="contact@brand.com">
+      <label for="cf-website-en">Website / Instagram (optional)</label>
+      <input type="text" id="cf-website-en" maxlength="150" placeholder="https://… or @instagram">
+      <label for="cf-message-en">Message</label>
+      <textarea id="cf-message-en" required maxlength="2000" placeholder="Tell me about the product, what you're looking for, which partnership models interest you, and timing if there's one."></textarea>
+      <button type="submit" id="cf-submit-en">Send proposal</button>
+      <div class="contact-msg" id="cf-msg-en" aria-live="polite"></div>
+    </form>
+    <p class="direct-email">or directly: <a href="mailto:ziggysfoodguide@gmail.com">ziggysfoodguide@gmail.com</a></p>
+    <p class="pricing-note">Rates, packages and terms on request</p>
+  </div>
+</section>
+
+</div>
+
+<!-- ============ ES ============ -->
+<div class="lang-block" id="lang-es">
+
+<header class="hero">
+  <span class="eyebrow">COLLAB</span>
+  <h1>Vamos a crear <em>algo crazy</em> juntos.</h1>
+  <div class="tagline">CLÁSICOS MEDITERRÁNEOS CON UN TWIST CRAZY</div>
+  <p class="lead">Creación de contenido gastronómico con identidad fuerte. Cada collab se piensa como una receta: el producto de la marca es el ingrediente principal, la historia es lo que queda. Ejecución, filmación, fotografía, edición y publicación — todo con el twist crazy.</p>
+</header>
+
+<section class="section">
+  <h2>Tres formatos de colaboración</h2>
+  <p class="section-sub">Elige el que más tenga sentido para tu marca. Todos incluyen concepto, receta, fotografía, grabación, edición e identificación de la marca en las descripciones.</p>
+  <div class="models three">
+    <div class="model">
+      <div class="model-tag">Opción A</div>
+      <h4>Collab</h4>
+      <p><strong>Reel + 2 stories</strong> publicados simultáneamente en la cuenta de la marca y en @ziggysfoodguide. Las dos audiencias sumadas en cada post. <em>El formato más accesible.</em></p>
+    </div>
+    <div class="model recommended">
+      <div class="model-tag">Opción B · Recomendada</div>
+      <h4>Colaboración remunerada</h4>
+      <p><strong>Reel + 2 stories</strong> publicados en mi perfil y entregados a la marca para publicar en su perfil. Dos publicaciones, cada una con su propio alcance. Métricas claras y separadas.</p>
+    </div>
+    <div class="model">
+      <div class="model-tag">Opción C</div>
+      <h4>Vídeo UGC</h4>
+      <p><strong>Reel</strong> producido para los canales de la marca: redes sociales, web y anuncios. Publicado solo por la marca, sin publicación en mi perfil. Incluye <strong>derechos de uso en anuncios pagados</strong>.</p>
+    </div>
+  </div>  <div class="frequency">
+    <strong>One-shot</strong> o <strong>colaboración continua</strong>, con la periodicidad que tenga sentido para la marca.
+    <span class="val">Mensual · Trimestral · Semestral · Anual · Otra</span>
+  </div>
+  <p class="open-note">Abierto a otras ideas — si tienes una dinámica diferente en mente, hablamos.</p>
+</section>
+
+<section class="section">
+  <div class="contact-box">
+    <h3>Hablemos</h3>
+    <p class="contact-sub">Cuéntame un poco sobre tu marca y lo que buscas. Responderé lo antes posible con el media kit completo y propuesta.</p>
+    <form id="collabFormEs" novalidate>
+      <label for="cf-name-es">Nombre</label>
+      <input type="text" id="cf-name-es" required maxlength="100" placeholder="Tu nombre">
+
+      <label for="cf-brand-es">Marca</label>
+      <input type="text" id="cf-brand-es" required maxlength="100" placeholder="Nombre de la marca">
+      <label for="cf-email-es">Email</label>
+      <input type="email" id="cf-email-es" required maxlength="120" placeholder="contacto@marca.com">
+      <label for="cf-website-es">Website / Instagram (opcional)</label>
+      <input type="text" id="cf-website-es" maxlength="150" placeholder="https://… o @instagram">
+      <label for="cf-message-es">Mensaje</label>
+      <textarea id="cf-message-es" required maxlength="2000" placeholder="Háblame del producto, lo que buscas, qué modelos de colaboración te interesan y los plazos."></textarea>
+      <button type="submit" id="cf-submit-es">Enviar propuesta</button>
+      <div class="contact-msg" id="cf-msg-es" aria-live="polite"></div>
+    </form>
+    <p class="direct-email">o directamente: <a href="mailto:ziggysfoodguide@gmail.com">ziggysfoodguide@gmail.com</a></p>
+    <p class="pricing-note">Valores, paquetes y condiciones bajo consulta</p>
+  </div>
+</section>
+
+</div>
+
+<footer class="page-footer">
+  © 2026 Ziggy's Food Guide ·
+  <a href="/">Site</a> ·
+  <a href="/privacidade.html">Privacidade</a> ·
+  <a href="/termos.html">Termos</a>
+</footer>
+
+<iframe name="collab_sink" class="sink" tabindex="-1" aria-hidden="true"></iframe>
+
+<script>
+// ====== CONFIGURE THESE (Google Form Collab) ======
+const CF_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSd8Nq7f53CY3oWilGojffZ4xp4-Csm4NkuWKrMny67NGfrkwQ/formResponse";
+const CF_FIELDS = {
+  name: "entry.286326349",
+  brand: "entry.799474773",
+  email: "entry.66286583",
+  website: "entry.1477276132",
+  message: "entry.1357263074"
+};
+// ==================================================
+
+const i18n = {
+  pt: {
+    success: "✓ Obrigado! Recebi a tua proposta e respondo em 48h.",
+    error: "Preenche os campos obrigatórios.",
+    back: "← Voltar ao site",
+    htmlLang: "pt-PT"
+  },
+  en: {
+    success: "✓ Thanks! I've received your proposal and will reply within 48h.",
+    error: "Please fill the required fields.",
+    back: "← Back to site",
+    htmlLang: "en"
+  },
+  es: {
+    success: "✓ ¡Gracias! Recibí tu propuesta y te respondo en 48h.",
+    error: "Rellena los campos obligatorios.",
+    back: "← Volver al sitio",
+    htmlLang: "es-ES"
+  }
+};
+
+function applyLang(lang){
+  document.querySelectorAll('.lang-block').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.lang-switch a').forEach(el => el.classList.remove('active'));
+  const target = document.getElementById('lang-'+lang);
+  if(target) target.classList.add('active');
+  const link = document.querySelector('.lang-switch a[data-lang="'+lang+'"]');
+  if(link) link.classList.add('active');
+  document.documentElement.lang = i18n[lang].htmlLang;
+  const bl = document.getElementById('backLink');
+  if(bl) bl.textContent = i18n[lang].back;
+  try { localStorage.setItem('lang', lang); } catch(e){}
+}
+
+(function(){
+  const saved = localStorage.getItem('lang') || 'pt';
+  applyLang(saved);
+
+  document.querySelectorAll('.lang-switch a').forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      applyLang(el.getAttribute('data-lang'));
+    });
+  });
+
+  function wireForm(formId, prefix, lang){
+    const form = document.getElementById(formId);
+    if(!form) return;
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById(`cf-name${prefix}`).value.trim();
+      const brand = document.getElementById(`cf-brand${prefix}`).value.trim();
+      const email = document.getElementById(`cf-email${prefix}`).value.trim();
+      const website = document.getElementById(`cf-website${prefix}`).value.trim();
+      const message = document.getElementById(`cf-message${prefix}`).value.trim();
+      const msg = document.getElementById(`cf-msg${prefix}`);
+      const btn = document.getElementById(`cf-submit${prefix}`);
+      if(!name || !brand || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        msg.className = 'contact-msg error';
+        msg.textContent = i18n[lang].error;
+        return;
+      }
+      btn.disabled = true;
+      const hidden = document.createElement('form');
+      hidden.action = CF_ACTION;
+      hidden.method = 'POST';
+      hidden.target = 'collab_sink';
+      hidden.style.display = 'none';
+      const data = { name, brand, email, website, message };
+      for(const [k, val] of Object.entries(data)){
+        if(!CF_FIELDS[k]) continue;
+        const inp = document.createElement('input');
+        inp.type = 'hidden';
+        inp.name = CF_FIELDS[k];
+        inp.value = val;
+        hidden.appendChild(inp);
+      }
+      document.body.appendChild(hidden);
+      hidden.submit();
+      setTimeout(() => {
+        msg.className = 'contact-msg success';
+        msg.textContent = i18n[lang].success;
+        form.reset();
+        btn.disabled = false;
+        document.body.removeChild(hidden);
+      }, 700);
+    });
+  }
+  wireForm('collabForm',   '',    'pt');
+  wireForm('collabFormEn', '-en', 'en');
+  wireForm('collabFormEs', '-es', 'es');
+})();
+</script>
+</body>
+</html>
