@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ziggy's Food Guide · Links</title>
+<meta name="description" content="Clássicos mediterrâneos com um twist crazy. Todos os links do Ziggy's Food Guide.">
+<link rel="canonical" href="https://ziggysfoodguide.com/links">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="theme-color" content="#E3151A">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ziggysfoodguide.com/links">
+<meta property="og:title" content="Ziggy's Food Guide · Links">
+<meta property="og:description" content="Clássicos mediterrâneos com um twist crazy.">
+<meta property="og:image" content="https://ziggysfoodguide.com/logo.svg">
+<meta property="og:site_name" content="Ziggy's Food Guide">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red: #E3151A;
+  --red-dark: #B5101A;
+  --paper: #FBF4E9;
+  --cream-dark: #F2E8D5;
+  --ink: #2A211C;
+  --ink-dim: #6b5e55;
+  --line: #e8dfd1;
+}
+*{ box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body{ margin: 0; padding: 0; }
+body{
+  background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Mono', monospace; font-size: 0.95rem; line-height: 1.6;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex; flex-direction: column;
+}
+
+/* Vichy stripe top */
+.vichy-top{
+  height: 12px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--red) 0,
+    var(--red) 10px,
+    var(--paper) 10px,
+    var(--paper) 20px
+  );
+}
+
+.wrap{
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 36px 24px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.brand{
+  text-align: center;
+  margin-bottom: 28px;
+}
+.brand .logo-circle{
+  width: 96px; height: 96px;
+  margin: 0 auto 16px;
+  background: var(--paper);
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(42, 33, 28, 0.08);
+}
+.brand .logo-circle img{
+  width: 72%; height: auto; display: block;
+}
+.brand h1{
+  font-family: 'Playfair Display', serif; font-weight: 900;
+  font-size: 1.6rem; color: var(--ink); margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+.brand .bio{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 10px auto 0;
+  max-width: 320px;
+}
+
+/* Social icons */
+.socials{
+  display: flex; justify-content: center; gap: 14px;
+  margin: 18px 0 30px;
+}
+.socials a{
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--red);
+  border: none;
+  color: var(--paper);
+  border-radius: 50%;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(227, 21, 26, 0.25);
+}
+.socials a:hover,
+.socials a:focus-visible{
+  background: var(--red-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(227, 21, 26, 0.4);
+  outline: none;
+}
+.socials a svg{ width: 22px; height: 22px; display: block; }
+
+/* Buttons stack */
+.links{
+  display: flex; flex-direction: column; gap: 12px;
+  margin-bottom: 32px;
+}
+.link-btn{
+  display: block;
+  width: 100%;
+  padding: 20px 16px;
+  background: var(--red);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.92rem; font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(227, 21, 26, 0.18);
+}
+.link-btn:hover,
+.link-btn:focus-visible{
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(227, 21, 26, 0.35);
+  outline: none;
+}
+.link-btn:active{ transform: translateY(0); }
+
+/* Footer */
+.foot{
+  text-align: center; margin-top: auto;
+  padding: 24px 0 8px;
+  font-size: 0.7rem; color: var(--ink-dim);
+  font-family: 'IBM Plex Mono', monospace;
+}
+.foot a{ color: var(--ink-dim); text-decoration: none; margin: 0 6px; }
+.foot a:hover{ color: var(--red); }
+
+/* Vichy stripe bottom */
+.vichy-bottom{
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--red) 0,
+    var(--red) 8px,
+    var(--paper) 8px,
+    var(--paper) 16px
+  );
+}
+
+@media (max-width: 380px){
+  .wrap{ padding: 28px 18px 20px; }
+  .link-btn{ padding: 16px 16px; font-size: 0.86rem; }
+  .brand h1{ font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="vichy-top"></div>
+
+<div class="wrap">
+
+  <div class="brand">
+    <div class="logo-circle">
+      <img src="/logo.svg" alt="Ziggy's Food Guide" width="96" height="96">
+    </div>
+    <h1>Ziggy's Food Guide</h1>
+    <p class="bio">
+      Crazy Chef | Food Content Creator 🍽️<br>
+      Mediterranean Recipes &amp; Restaurant Spots<br>
+      📍 Lisbon | Ziggy 🐾 | Official Taster
+    </p>
+  </div>
+
+  <div class="socials" aria-label="Redes sociais">
+    <a href="https://instagram.com/ziggysfoodguide" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.26.07 1.64.07 4.85 0 3.2 0 3.59-.07 4.85-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.26.06-1.64.07-4.85.07-3.2 0-3.59 0-4.85-.07-1.17-.05-1.8-.25-2.23-.42-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.17-.42-.37-1.06-.42-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.59.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.4 2.21 8.8 2.2 12 2.2zm0 1.98c-3.14 0-3.52 0-4.76.07-1.07.05-1.65.23-2.04.38-.51.2-.88.44-1.26.82-.38.38-.62.75-.82 1.26-.15.39-.33.97-.38 2.04C2.68 9.48 2.67 9.86 2.67 13s0 3.52.07 4.76c.05 1.07.23 1.65.38 2.04.2.51.44.88.82 1.26.38.38.75.62 1.26.82.39.15.97.33 2.04.38 1.25.06 1.62.07 4.76.07s3.52 0 4.76-.07c1.07-.05 1.65-.23 2.04-.38.51-.2.88-.44 1.26-.82.38-.38.62-.75.82-1.26.15-.39.33-.97.38-2.04.06-1.25.07-1.62.07-4.76s0-3.52-.07-4.76c-.05-1.07-.23-1.65-.38-2.04-.2-.51-.44-.88-.82-1.26-.38-.38-.75-.62-1.26-.82-.39-.15-.97-.33-2.04-.38-1.25-.07-1.62-.07-4.76-.07zm0 3.37a5.45 5.45 0 1 1 0 10.9 5.45 5.45 0 0 1 0-10.9zm0 8.99a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm6.94-9.21a1.27 1.27 0 1 1-2.54 0 1.27 1.27 0 0 1 2.54 0z"/>
+      </svg>
+    </a>
+    <a href="https://www.tiktok.com/@ziggysfoodguide" target="_blank" rel="noopener" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V8.9A8.15 8.15 0 0 0 20.86 10V7.17A4.85 4.85 0 0 1 19.59 6.69z"/>
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/@ZiggysFoodGuide" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23 9.71a8.5 8.5 0 0 0-.91-4.13 2.92 2.92 0 0 0-1.72-1A78.36 78.36 0 0 0 12 4.27a78.45 78.45 0 0 0-8.34.3 2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 0 0 0 6.48 9.55 9.55 0 0 0 .3 2 3.14 3.14 0 0 0 .71 1.36 2.86 2.86 0 0 0 1.49.78 45.18 45.18 0 0 0 6.5.33c3.5.05 6.57 0 10.2-.28a2.88 2.88 0 0 0 1.53-.78 2.49 2.49 0 0 0 .61-1 10.58 10.58 0 0 0 .52-3.4c.04-.56.04-3.94.04-4.54zM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08z"/>
+      </svg>
+    </a>
+  </div>
+
+  <nav class="links" aria-label="Ligações principais">
+    <a class="link-btn" href="/?lang=en" data-link="site">ALL MY RECIPES</a>
+    <a class="link-btn" href="/collab.html" data-link="collab">COLLAB</a>
+    <a class="link-btn" href="/?newsletter=1&lang=en#waitlist" data-link="newsletter">NEWSLETTER</a>
+  </nav>
+
+  <div class="foot">
+    © 2026 Ziggy's Food Guide · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a>
+  </div>
+</div>
+
+<div class="vichy-bottom"></div>
+
+</body>
+</html>
